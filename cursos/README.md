@@ -1,16 +1,47 @@
-# React + Vite
+#  Plataforma de Cursos em Vídeo — Projeto Pessoal
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma plataforma de cursos estilo *Alura*, criada com o objetivo de estudar, praticar e aprofundar conhecimentos em**React + Tailwind** no frontend.  
+A plataforma possui comunicação com Backend em Java, Telas de gestao administrativa, upload de vídeos e player com sidebar de aulas.
+### Objetivos do Projeto
+- Praticar **React**, rotas protegidas, contexto de autenticação e UI com Tailwind.
+- Criar um ambiente realista de estudos full-stack.
 
-Currently, two official plugins are available:
+##  Arquitetura Geral
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### **Frontend — React + Vite**
+- React 18
+- React Router
+- Context API para autenticação
+- Tailwind CSS
+- Player de vídeo com sidebar responsiva
+- Área de administração completa
+- Token armazenado no frontend (localStorage)
+---
 
-## React Compiler
+## Telas de usuario
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Tela de aula com sideBar com as outras aulas do mesmo modulo
 
-## Expanding the ESLint configuration
+![Tela de uma Aula](./screens/Aula.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Tela de Modulos de um curso
+
+![Tela de modulos](./screens/Modulos.png)
+
+### Tela de cursos 
+![Tela de Cursos](./screens/Cursos.png)
+
+## Telas de Admin
+
+### tela de gestao de cursos
+
+![Tela de Gestao de Cursos](./screens/CursosAdmin.png)
+
+### tela de gestao dos modulos de um curso
+
+![Tela de Gestao de modulos de um curso](./screens/ModulosAdmin.png)
+
+### tela de gestao de aulas de um modulo
+
+![tela de gestao de aulas de um modulo ](./screens/AulaAdmin.png)
+

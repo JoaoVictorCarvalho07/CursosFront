@@ -58,7 +58,7 @@ export default function AulaPlayer() {
 
   return (
     <Layout>
-      <div className="flex">
+      <div className="flex w-full">
 
         {/* BOTÃO MOBILE */}
         <button
@@ -73,16 +73,7 @@ export default function AulaPlayer() {
         </button  >
 
 
-        <button 
-        onClick={()=>{}}
-        className="
-            invisible lg:visible  fixed top-25 left-10 
-            bg-blue-600 text-white font-medium 
-            px-5 py-3 rounded-full shadow-lg
-          ">
-          Aulas ▸
-        </button>
-
+      <div className="">
                 {/* SIDEBAR RESPONSIVA */}
         <SidebarAulas
           aulas={aulasModulo}
@@ -91,13 +82,15 @@ export default function AulaPlayer() {
           setMobileOpen={setMobileOpen}
           hidden={hidden}
         />
+      </div>
+
 
         {/* PLAYER */}
         
-        <div className="flex-1 pr-6">
+        <div className="flex-1 pr-6 ">
           <h1 className="text-3xl font-bold mb-4">{aula.titulo}</h1>
 
-          <div className="bg-black rounded-lg overflow-hidden shadow-lg mb-6">
+          <div className="bg-black rounded-lg overflow-hidden shadow-lg mb-6 lg:max-w-250">
             <div className="relative pt-[56.25%]">
               <ReactPlayer
                 src={`${videoUrl}`}

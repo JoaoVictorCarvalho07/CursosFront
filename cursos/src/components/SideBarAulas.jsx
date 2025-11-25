@@ -17,7 +17,7 @@ export default function SidebarAulas({ aulas, aulaAtualId, mobileOpen, setMobile
           fixed top-0 right-0 h-full w-72 bg-gray-900 border-l border-gray-800 z-50 
           transform transition-transform duration-300 
           ${mobileOpen ? "translate-x-0" : "translate-x-full"} 
-          lg:static lg:translate-x-0 lg:w-80
+          lg:static lg:translate-x-0 lg:w-80 
         `}
       >
         <div className="p-4 flex justify-between items-center border-b border-gray-700 lg:hidden">
